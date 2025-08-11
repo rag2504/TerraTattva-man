@@ -126,12 +126,7 @@ export default function Products() {
       ? featuredProducts
       : featuredProducts.filter(
           (product) =>
-            product.name
-              .toLowerCase()
-              .includes(selectedCategory.toLowerCase()) ||
-            product.description
-              .toLowerCase()
-              .includes(selectedCategory.toLowerCase()),
+            product.category?.includes(selectedCategory)
         );
 
   return (

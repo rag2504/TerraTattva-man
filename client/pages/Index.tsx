@@ -36,6 +36,7 @@ interface Product {
   images?: string[];
   description: string;
   dimensions?: string;
+  category?: string[];
 }
 
 interface CartItem extends Product {
@@ -56,6 +57,7 @@ const featuredProducts: Product[] = [
     dimensions: "Width 1cm × Length 11cm × Height 19cm",
     description:
       "Drawing from the charm of traditional Indian pottery, this design uses soft pastel shades and hand-sculpted floral motifs to bring a modern twist to heritage craft. It blends rustic textures with elegant detailing, making each piece a celebration of earthy beauty.",
+    category: ["Pottery", "Decorative"],
   },
   {
     id: 2,
@@ -70,6 +72,7 @@ const featuredProducts: Product[] = [
     dimensions: "Height 7cm × Width 0.5cm × Length 7.5cm",
     description:
       "With its raw, tribal charm, Warli patterns narrate stories of community, nature, and rituals using delicate geometric forms — minimal yet deeply expressive.",
+    category: ["Pottery"],
   },
   {
     id: 3,
@@ -81,6 +84,7 @@ const featuredProducts: Product[] = [
       "https://i.postimg.cc/kMzqf0hS/Whats-App-Image-2025-08-10-at-09-03-05-9eccec8b.jpg",
       "https://i.postimg.cc/kMzqf0hS/Whats-App-Image-2025-08-10-at-09-03-05-9eccec8b.jpg",
     ],
+    category: ["Pottery"],
     dimensions: "Height 0.5cm × Diameter 6cm (Set of 6)",
     description:
       "Kachni Style – Rooted in Bihar's Mithila region, this fine-line monochrome style of Madhubani art uses intricate patterns to bring animals and nature to life. The turtle, a symbol of endurance and cosmic order, is beautifully detailed with repetitive motifs and symmetrical balance, reflecting the spiritual essence of traditional Indian folklore.",
